@@ -152,8 +152,9 @@ DropArea.addEventListener("drop", (e) => {
 });
 
 function playvideo(){
-  DropArea.style.borderStyle="solid";
+  
     if (file && file.type.includes("video")) {
+        DropArea.style.borderStyle="solid";
         const reader = new FileReader();
         reader.onload = function (event) {
           file = event.target.result;
